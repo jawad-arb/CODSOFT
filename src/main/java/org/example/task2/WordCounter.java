@@ -17,11 +17,9 @@ public class WordCounter {
         String inputText = "";
 
         if (userChoice.equals("1")) {
-            // Input text manually
             System.out.println("Enter the text: ");
             inputText = scanner.nextLine();
         } else if (userChoice.equals("2")) {
-            // Input text from a file
             inputText = readFromFile();
             if (inputText == null) {
                 System.out.println("No file selected or unable to read the file. Exiting.");
